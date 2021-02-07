@@ -11,3 +11,10 @@ class Messages(object):
 
         """
         return self.client._get("/messages", params=params)
+
+    def retreive_a_message(self, id):
+        """
+        retreive one message by id
+
+        """
+        return self.client._get("/messages/"+ str(id))

@@ -29,6 +29,21 @@ client = Client(URL, API_KEY)
 response = client.automations.list_all_automations()
 ```
 
+### Campaigns
+#### List all campaigns
+```
+response = client.campaigns.list_all_campaigns()
+```
+#### Retreive a campaign
+```
+response = client.campaigns.retreive_a_campaign(campaign_id)
+```
+#### Retreive a campaign message
+```
+response = client.campaigns.retreive_a_campaign_message(campaign_id)
+```
+
+
 ### Contacts
 #### Create a contact
 ```
@@ -386,6 +401,15 @@ data = {
 }
 response = client.lists.create_a_list_group_permission(data)
 ```
+
+### Messages
+#### List all Messages
+```
+response = client.messages.list_all_messages()
+```
+#### Retreive a message
+```
+response = client.messages.retreive_a_message(message_id)
 
 ### Notes
 #### Create a note
