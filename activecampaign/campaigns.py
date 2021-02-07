@@ -9,14 +9,14 @@ class Campaigns(object):
         """
         return self.client._get("/campaigns", params=params)
 
-    def retreive_a_campaign(self, id):
+    def retrieve_a_campaign(self, id):
         """
         retreive one campaign by id
 
         """
         return self.client._get("/campaigns/"+ str(id))
 
-    def retreive_a_campaign_message(self, id):
+    def retrieve_a_campaign_message(self, id):
         """
         retreive one campaign message by id
 
